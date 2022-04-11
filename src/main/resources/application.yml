@@ -1,0 +1,20 @@
+server:
+  port: 9999
+
+my:
+  urlStr: ${SWAGGER_UI_URLS}
+springdoc:
+  swagger-ui:
+    urls:
+    urls-primary-name: self-service
+peter:
+  urls:
+    -
+      url: "/v3/api-docs"
+      name: "PService1"
+    -
+      url: /v3/api-docs
+      name: PService2
+    -
+      url: /v3/api-docs
+      name: PService3
