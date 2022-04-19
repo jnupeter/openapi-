@@ -24,7 +24,7 @@ public class MyUiConfig extends SwaggerUiConfigProperties {
         Set<SwaggerUrl> urls = super.getUrls();
         if(urls != null) {
             List<SwaggerUrl> urlsFromConfig = readFromConfig(urlStr);
-            urls.add(new SwaggerUrl("self-service", "/v3/api-docs"));
+            urls.add(new SwaggerUrl("self-service", "../v3/api-docs"));
             for(SwaggerUrl url : urlsFromConfig) {
                 urls.add(url);
             }
